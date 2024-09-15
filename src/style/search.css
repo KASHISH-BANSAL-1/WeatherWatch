@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't affect the element's width and height */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.search-container {
+  background:url("../assets/logg.png");
+  display: flex;
+  flex-direction: column;
+ 
+  height: 100vh;
+  background-size: cover; /* Ensure the background image covers the container */
+  background-position: center; /* Center the background image */
+}
+
+.app-container {
+  margin-top: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin-left: -120px;
+}
+
+
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 40%;
+  margin-left: 50px;
+}
+
+button {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #323ee3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 20%;
+}
+button:hover{
+  background: rgb(10, 27, 93);
+}
+button:disabled {
+  background-color: #6c757d;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.weather-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}

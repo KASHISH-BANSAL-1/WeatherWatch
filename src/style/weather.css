@@ -1,0 +1,179 @@
+/* Ensure the body and html elements cover the full viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.weather-app {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 1550px; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+  position: relative;
+}
+
+.current-weather {
+  position: absolute;
+  top: 500px; 
+  left: 100px; 
+  margin-bottom: 30px;
+}
+
+.current-temp {
+  display: flex;
+  align-items: center;
+  font-size: 80px; 
+  font-weight: bold;
+}
+
+.current-temp img {
+  margin-left: 20px;
+  width: 100px; 
+  height: 100px;
+}
+
+.current-weather p {
+  font-size: 34px; 
+}
+
+.weekly-forecast {
+  position: absolute;
+  right: 1px;
+  width: 550px;
+  height: 100vh;
+  background: rgba(44, 44, 56, 0.7); 
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.daily-forecast {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.daily-card {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+}
+.data{
+  height: 100px;
+}
+
+
+h2, h3 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0;
+  color: #ffffff;
+}
+h4{
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  
+  .current-temp {
+    font-size: 4rem; 
+    font-weight: bolder;
+    margin-top: 100px;
+  }
+
+  .current-temp img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .current-weather p {
+    font-size: 1.5rem; 
+  }
+
+  .weekly-forecast {
+    width: 80%;
+    max-width: 60%;
+    background:none;
+    
+  }
+
+  .daily-card {
+    font-size: 1.3rem;
+  }
+
+  .info, .date {
+    font-size: 1rem; 
+  }
+
+  h2, h3 {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .current-temp {
+    font-size: 3rem;
+  }
+
+  .current-temp img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .current-weather p {
+    font-size: 1rem;
+  }
+  .weekly-forecast{
+    background: none;
+  }
+
+  .daily-card {
+    font-size: 0.875rem;
+  }
+
+  .info, .date {
+    font-size: 0.75rem;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 15px; 
+  }
+
+  h1 {
+    font-size: 2.5rem; 
+  }
+
+  h4 {
+    font-size: 1.5rem; 
+  }
+}
