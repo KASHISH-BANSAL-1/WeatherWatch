@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures padding doesn't affect the element's width and height */
+  box-sizing: border-box; 
 }
 
 body {
@@ -16,8 +16,8 @@ body {
   flex-direction: column;
  
   height: 100vh;
-  background-size: cover; /* Ensure the background image covers the container */
-  background-position: center; /* Center the background image */
+  background-size: cover; 
+  background-position: center; 
 }
 
 .app-container {

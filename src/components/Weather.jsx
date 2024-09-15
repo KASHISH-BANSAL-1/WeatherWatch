@@ -17,7 +17,7 @@ const Weather = () => {
 
   const { city, list } = data;
   const currentTemp = Math.round(list[0].main.temp);
-  const weatherCondition = list[0].weather[0].main; // Current weather condition (e.g., "Clear", "Rain", etc.)
+  const weatherCondition = list[0].weather[0].main; 
 
   useEffect(() => {
     if (currentTemp < 0) {
