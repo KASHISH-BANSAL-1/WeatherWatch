@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import '../style/weather.css';
 import warm from '../assets/warm.jpeg';
 import cool from '../assets/cool.jpeg';
@@ -10,6 +10,7 @@ const Weather = () => {
   const location = useLocation();
   const { data } = location.state || {};
   const [bgImage, setBgImage] = useState("");
+  const navigate = useNavigate();
 
   if (!data) {
     return <div>No weather data available</div>;
@@ -30,6 +31,9 @@ const Weather = () => {
       setBgImage(hot);
     }
   }, [currentTemp]);
+  const handleChange=()=>{
+      navigate('/')
+  }
 
   const dailyForecasts = list.filter(forecast => forecast.dt_txt.includes("12:00:00")).slice(0, 6); 
 
@@ -71,7 +75,7 @@ const Weather = () => {
            </div>
           ))}
         </div>
-        
+        <button  className="city" onClick={handleChange}>Change City</button>
       </div>
     </div>
   );

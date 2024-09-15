@@ -91,6 +91,12 @@ h1 {
 h4{
   font-size: 50px;
 }
+.city{
+  width: 140px;
+  padding: 16px 12px;
+  margin-top: 40px;
+  margin-left: 170px;
+}
 
 @media (max-width: 768px) {
   
