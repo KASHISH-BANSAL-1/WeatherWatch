@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
 import {   Routes, Route } from 'react-router-dom';
-import Search from './components/search';
+import Search from './components/Search';
 import Weather from './components/Weather';
 
 const App = () => {
